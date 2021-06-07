@@ -33,6 +33,35 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Start Pomodoro","arg":"po","subtitle":"25 minutes"},{"title":"Stop","arg":"stop","subtitle":"Stop current timer"},{"title":"Take a Short Break","arg":"sb","subtitle":"Default: 5 minutes"},{"title":"Take a Long Break","arg":"lb","subtitle":"Default: 15 min"}]</string>
+				<key>keyword</key>
+				<string>jf</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Just Focus</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>796B84BC-8E30-4C13-BDE2-18AC78CBAB0A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
 	if ((q as string) is equal to "po") then
@@ -66,42 +95,16 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"title":"Start Pomodoro","arg":"po","subtitle":"25 minutes"},{"title":"Stop","arg":"stop"},{"title":"Take a Short Break","arg":"sb","subtitle":"5 minutes"},{"title":"Take a Long Break","arg":"lb","subtitle":"30 min"}]</string>
-				<key>keyword</key>
-				<string>jf</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Just Focus</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>796B84BC-8E30-4C13-BDE2-18AC78CBAB0A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>JustFocus for Mac
 Focus on What's Important.
 
 Official website:
-https://getjustfocus.com</string>
+https://getjustfocus.com
+
+Alfred Workflow repo:
+https://github.com/justinyanme/justfocus-alfred</string>
 	<key>uidata</key>
 	<dict>
 		<key>796B84BC-8E30-4C13-BDE2-18AC78CBAB0A</key>
@@ -122,7 +125,7 @@ https://getjustfocus.com</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string>https://getjustfocus.com/</string>
 </dict>
